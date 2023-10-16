@@ -1,4 +1,3 @@
-uuid: 32840fdf-55bf-4b8e-bd47-a5b07a3b99f4
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - system
   theme:
     - custom_theme
-_core:
-  default_config_hash: yT3SLuucmWC1Nr-HjMm4Ur7ejqnXssAzyi0mOHrxO9U
 id: custom_theme_powered_by_drupal
 theme: custom_theme
 region: footer
@@ -17,10 +14,6 @@ plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
   label: 'Powered by Drupal'
-  label_display: '0'
   provider: system
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: '<front>'
+  label_display: '0'
+visibility: {  }

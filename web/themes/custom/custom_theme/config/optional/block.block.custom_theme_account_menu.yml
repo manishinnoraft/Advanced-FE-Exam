@@ -1,4 +1,3 @@
-uuid: cfc41118-55db-4992-a35a-b2f06f46ccd6
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - system
   theme:
     - custom_theme
-_core:
-  default_config_hash: iXlmVnmbABWPN4zuMrilyEG4vu7ESh6OfrlcfABl844
 id: custom_theme_account_menu
 theme: custom_theme
 region: nav_additional
@@ -19,13 +16,9 @@ plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
   label: 'User account menu'
-  label_display: '0'
   provider: system
+  label_display: '0'
   level: 1
   depth: 0
   expand_all_items: false
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: '<front>'
+visibility: {  }

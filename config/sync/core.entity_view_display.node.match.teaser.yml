@@ -1,0 +1,42 @@
+uuid: f8b7c2eb-41da-4284-bd3e-030a1f03e032
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.match.body
+    - field.field.node.match.field_carousel_image
+    - field.field.node.match.field_date_and_time
+    - field.field.node.match.field_description
+    - field.field.node.match.field_location
+    - field.field.node.match.field_team_1
+    - field.field.node.match.field_team_2
+    - node.type.match
+  module:
+    - text
+    - user
+id: node.match.teaser
+targetEntityType: node
+bundle: match
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carousel_image: true
+  field_date_and_time: true
+  field_description: true
+  field_location: true
+  field_team_1: true
+  field_team_2: true

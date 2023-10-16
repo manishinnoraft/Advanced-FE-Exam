@@ -1,0 +1,19 @@
+uuid: 167d011b-814d-4f9c-b937-ea905bc83b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_team_code
+    - taxonomy.vocabulary.team_name
+id: taxonomy_term.team_name.field_team_code
+field_name: field_team_code
+entity_type: taxonomy_term
+bundle: team_name
+label: 'Team Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,98 @@
+@import '../partials/variables';
+
+// Css for the carousel
+.view-display-id-block_1 {
+  .view-content {
+    position: relative;
+  }
+
+}
+
+.carousel_image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+// CSS for carousel div
+.carousel_div {
+  position: relative;
+  
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+
+  &::after {
+    content: url('../../images/world1.png');
+    position: absolute;
+    top: 2rem;
+    background-size: 25px;
+    left: 2rem;
+    z-index: 99;
+
+  }
+}
+
+.match_details_div {
+  left: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 30%;
+
+
+}
+
+.match_details--name {
+  margin-top: 1rem;
+  font-size: 32px;
+  font-weight: bold;
+  color: $colorwhite;
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $colorwhite;
+
+  }
+}
+
+.match_details--time {
+  font-weight: bolder;
+  color: $colorpink;
+  margin-top: 1rem;
+}
+
+.match_details--location {
+  color: $colorwhite;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.match_details--description {
+  color: $colorwhite;
+  margin-top: 2rem;
+
+}
+
+// CSS for GoIndia Hastag
+.hashtag{
+  display: none;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: blue;
+  position: absolute;
+  top: 9rem;
+  border-radius: 1rem;
+  left: 3rem;
+}
+
+
