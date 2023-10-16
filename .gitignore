@@ -38,4 +38,4 @@
 # Ignoring phpcs configurations.
 phpcs.xml
 # Ignoring node modules files.
-node_modules/
+node_modules/   
