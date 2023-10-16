@@ -1,0 +1,29 @@
+uuid: 9b058826-6290-48c8-bb7a-191f9aba07ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_code_name
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.team_name
+id: taxonomy_term.tags.field_code_name
+field_name: field_code_name
+entity_type: taxonomy_term
+bundle: tags
+label: 'Code Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      team_name: team_name
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

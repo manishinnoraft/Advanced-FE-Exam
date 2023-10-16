@@ -1,0 +1,39 @@
+uuid: d581f411-3ffc-4223-9929-47605246bf8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.team_name.field_team_code
+    - field.field.taxonomy_term.team_name.field_team_name
+    - taxonomy.vocabulary.team_name
+  module:
+    - text
+id: taxonomy_term.team_name.default
+targetEntityType: taxonomy_term
+bundle: team_name
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_team_code:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_team_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
