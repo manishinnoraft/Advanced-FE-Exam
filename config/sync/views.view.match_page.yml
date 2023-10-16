@@ -617,7 +617,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"carousel_container\">\r\n  <div class=\"carousel_div\">\r\n    <div class=\"carousel_image\">\r\n      {{ field_carousel_image }}\r\n    </div>\r\n<div class=\"match_details_div\">\r\n   <div class=\"match_details--name\">\r\n  {{ title }} \r\n  <span class=\"match_details--name\"> : </span> \r\n  {{ field_team_code }} \r\n  <span class=\"match_details--name\"> vs </span> \r\n  {{ field_team_code_1 }}\r\n</div>\r\n\r\n    <div class=\"match_details--time\">\r\n      <span>{{ field_date_and_time }}</span>\r\n    </div>\r\n    <div class=\"match_details--location\">\r\n      {{ field_location }}\r\n    </div>\r\n    <div class=\"match_details--description\">\r\n      {{ field_description }}\r\n    </div>\r\n</div>\r\n  </div>\r\n</div>\r\n"
+            text: "<div class=\"carousel_container\">\r\n  <div class=\"carousel_div\">\r\n    <div class=\"carousel_image\">\r\n      {{ field_carousel_image }}\r\n    </div>\r\n<div class=\"match_details_div\">\r\n   <div class=\"match_details--name\">\r\n  {{ title }} \r\n  <span class=\"match_details--name\"> : </span> \r\n  {{ field_team_code }} \r\n  <span class=\"match_details--name\"> vs </span> \r\n  {{ field_team_code_1 }}\r\n</div>\r\n\r\n    <div class=\"match_details--time\">\r\n      <span>{{ field_date_and_time }}</span>\r\n    </div>\r\n    <div class=\"match_details--location\">\r\n      {{ field_location }}\r\n    </div>\r\n    <div class=\"match_details--description\">\r\n      {{ field_description }}\r\n    </div>\r\n</div>\r\n<div class=\"hashtag\">#GoIndia</div>\r\n  </div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -691,17 +691,15 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
+        field_date_and_time_value:
+          id: field_date_and_time_value
+          table: node__field_date_and_time
+          field: field_date_and_time_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          plugin_id: datetime
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
